@@ -74,6 +74,19 @@
           <td><span th:text="*{newAddress}"></span></td>
           <input type="hidden" name="newAddress" id="newAddress" th:value="*{newAddress}"/>
         </tr>
+        <tr>
+          <th>引越し予定日</th>
+        </tr>
+        <tr>
+          <td><span th:text="*{movingMonth}"></span></td>
+          <input type="hidden" name="movingMonth" id="movingMonth" th:value="*{movingMonth}"/>
+          <th>月</th>
+        </tr>
+        <tr>
+          <td><span th:text="*{movingDay}"></span></td>
+          <input type="hidden" name="movingDay" id="movingDay" th:value="*{movingDay}"/>
+          <th>日</th>
+        </tr>
         </tbody>
       </table>
       <div class="sub-title">お荷物情報</div>

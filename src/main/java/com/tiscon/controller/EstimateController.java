@@ -51,7 +51,6 @@ public class EstimateController {
         if (!model.containsAttribute("userOrderForm")) {
             model.addAttribute("userOrderForm", new UserOrderForm());
         }
-
         model.addAttribute("prefectures", estimateDAO.getAllPrefectures());
         return "input";
     }
@@ -122,8 +121,8 @@ public class EstimateController {
     String calculation(@Validated UserOrderForm userOrderForm, BindingResult result, Model model) {
         if (result.hasErrors()) {
 
-            model.addAttribute("prefectures", estimateDAO.getAllPrefectures());
-            model.addAttribute("userOrderForm", userOrderForm);
+            model.addAttribute("prefectures", estimateDAO.getAllPrefectures());  // 属性追加
+            model.addAttribute("userOrderForm", userOrderForm);  // 属性追加
             return "confirm";
         }
 

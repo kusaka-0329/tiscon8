@@ -22,6 +22,10 @@ public class UserOrderDto {
 
     private String bicycle;
 
+    private String movingMonth;
+
+    private String movingDay;
+
     private String washingMachine;
 
     private boolean washingMachineInstallation;
@@ -120,5 +124,21 @@ public class UserOrderDto {
 
     public void setWashingMachineInstallation(Boolean washingMachineInstallation) {
         this.washingMachineInstallation = washingMachineInstallation;
+    }
+
+    public String getMovingDay() {
+        return movingDay;
+    }
+
+    public void setMovingDay(String movingDay) {
+        this.movingDay = movingDay;
+    }
+
+    public String getMovingMonth() {
+        return movingMonth;
+    }
+
+    public void setMovingMonth(String movingMonth) {
+        this.movingMonth = movingMonth;
     }
 }
